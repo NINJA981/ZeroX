@@ -1,0 +1,11 @@
+fastapi==0.111.0
+uvicorn==0.30.1
+llama-index==0.10.45
+llama-index-vector-stores-supabase==0.1.2
+supabase==2.5.1
+pymupdf==1.24.5
+google-generativeai==0.7.0
+pydantic==2.7.4
+python-multipart==0.0.9
+python-dotenv==1.0.1
+reportlab==4.2.0
