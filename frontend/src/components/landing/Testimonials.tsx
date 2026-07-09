@@ -1,21 +1,29 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import { Quote } from "lucide-react";
 
 const testimonials = [
-  { quote: "Finally, legal guidance I can actually understand.", author: "Student" },
-  { quote: "It helped me understand my employment rights before taking action.", author: "Working Professional" },
-  { quote: "I knew exactly which authority to approach.", author: "Tenant" },
+  {
+    quote: "Sahur AI helped me understand my tenancy rights when my landlord tried to evict me illegally. The compliance report gave me the confidence to stand my ground.",
+    author: "Rahul S., Tenant",
+  },
+  {
+    quote: "I uploaded my employment contract and found two clauses that violated state labor laws. Sahur AI pointed me exactly to the right authority.",
+    author: "Priya M., Software Engineer",
+  },
+  {
+    quote: "The explainable AI feature is brilliant. It doesn't just give you an answer; it shows you exactly which article of the Constitution protects you.",
+    author: "Arjun K., Law Student",
+  },
 ];
 
 export function Testimonials() {
   return (
-    <section className="mx-auto max-w-6xl px-4 py-20">
+    <section id="testimonials" className="mx-auto max-w-6xl px-4 py-24 sm:py-32">
       <div className="text-center">
-        <p className="text-sm font-semibold uppercase tracking-wide text-teal">Voices</p>
-        <h2 className="mt-2 font-display text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-          Clarity people trust
+        <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+          Empowering citizens with legal clarity.
         </h2>
       </div>
 
@@ -31,10 +39,10 @@ export function Testimonials() {
           >
             <Quote className="h-7 w-7 text-teal/40" />
             <p className="mt-4 text-lg font-medium leading-relaxed text-foreground">
-              "{t.quote}"
+              &quot;{t.quote}&quot;
             </p>
             <footer className="mt-4 text-sm font-semibold text-muted-foreground">
-              â€” {t.author}
+              &mdash; {t.author}
             </footer>
           </motion.blockquote>
         ))}

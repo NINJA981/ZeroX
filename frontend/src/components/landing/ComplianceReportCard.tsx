@@ -4,10 +4,8 @@ import { motion } from "framer-motion";
 import { ShieldCheck, ScrollText, Landmark, Gauge, AlertTriangle, FileText } from "lucide-react";
 
 export function ComplianceReportCard({
-  compact = false,
   className = "",
 }: {
-  compact?: boolean;
   className?: string;
 }) {
   return (

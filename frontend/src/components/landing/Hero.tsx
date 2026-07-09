@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Sparkles, FolderUp } from "lucide-react";
+import { FolderUp } from "lucide-react";
 import { FloatingComplianceReport } from "./ComplianceReportCard";
 
 export function Hero() {
@@ -14,15 +14,7 @@ export function Hero() {
 
       <div className="mx-auto grid max-w-6xl items-center gap-16 px-4 lg:grid-cols-2">
         <div>
-          <motion.span
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1.5 text-xs font-medium text-muted-foreground shadow-sm"
-          >
-            <Sparkles className="h-3.5 w-3.5 text-secondary" />
-            AI-Powered Legal Intelligence
-          </motion.span>
+
 
           <motion.h1
             initial={{ opacity: 0, y: 16 }}
@@ -64,16 +56,7 @@ export function Hero() {
             </a>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.35 }}
-            className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-[14px] font-medium text-muted-foreground"
-          >
-            <span className="flex items-center gap-2"><span className="text-success text-base">✓</span> Official Legal Sources</span>
-            <span className="flex items-center gap-2"><span className="text-success text-base">✓</span> Explainable AI</span>
-            <span className="flex items-center gap-2"><span className="text-success text-base">✓</span> Secure Document Vault</span>
-          </motion.div>
+
         </div>
 
         <FloatingComplianceReport />

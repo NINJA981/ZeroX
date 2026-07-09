@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Scale, ScrollText, FolderLock, BrainCircuit, FileText, Landmark, ListChecks } from "lucide-react";
+import { Scale, FolderLock, BrainCircuit, FileText, Landmark, ListChecks } from "lucide-react";
 import { ElementType } from "react";
 
 const features: { icon: ElementType, title: string, desc: string }[] = [

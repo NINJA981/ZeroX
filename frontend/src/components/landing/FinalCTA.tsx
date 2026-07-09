@@ -1,7 +1,6 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
-import { FolderUp } from "lucide-react";
 
 export function FinalCTA() {
   return (
@@ -21,22 +20,12 @@ export function FinalCTA() {
           <h2 className="font-display text-3xl font-extrabold tracking-tight text-teal-foreground sm:text-5xl">
             Ready to Understand Your Rights?
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-teal-foreground/85">
-            Get an explainable, personalized compliance report grounded in
-            official legal sources â€” in minutes.
-          </p>
-          <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
+          <div className="mt-8 flex justify-center">
             <a
               href="#demo"
-              className="inline-flex items-center justify-center gap-2 rounded-2xl bg-background px-6 py-3.5 text-sm font-semibold text-foreground shadow-soft transition-transform hover:scale-[1.03]"
+              className="inline-flex items-center justify-center rounded-2xl bg-background px-8 py-4 text-[15px] font-semibold text-foreground shadow-soft transition-transform hover:-translate-y-0.5"
             >
-              ðŸš€ Analyze My Situation
-            </a>
-            <a
-              href="#legal-vault"
-              className="inline-flex items-center justify-center gap-2 rounded-2xl border border-teal-foreground/40 bg-transparent px-6 py-3.5 text-sm font-semibold text-teal-foreground transition-colors hover:bg-background/10"
-            >
-              <FolderUp className="h-4 w-4" /> Upload My Documents
+              Analyze My Situation
             </a>
           </div>
         </div>
