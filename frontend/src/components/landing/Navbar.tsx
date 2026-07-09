@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
@@ -53,13 +53,13 @@ export function Navbar() {
 
         <div className="hidden items-center gap-2 md:flex">
           <a
-            href="#top"
+            href="/login"
             className="rounded-xl px-4 py-2 text-sm font-semibold text-foreground transition-colors hover:bg-secondary"
           >
             Sign In
           </a>
           <a
-            href="#demo"
+            href="/login"
             className="rounded-xl bg-gradient-primary px-4 py-2 text-sm font-semibold text-teal-foreground shadow-soft transition-transform hover:scale-[1.03]"
           >
             Get Started
@@ -88,10 +88,10 @@ export function Navbar() {
             </a>
           ))}
           <div className="mt-2 grid grid-cols-2 gap-2">
-            <a href="#top" className="rounded-xl border border-border px-4 py-2 text-center text-sm font-semibold">
+            <a href="/login" className="rounded-xl border border-border px-4 py-2 text-center text-sm font-semibold">
               Sign In
             </a>
-            <a href="#demo" className="rounded-xl bg-gradient-primary px-4 py-2 text-center text-sm font-semibold text-teal-foreground">
+            <a href="/login" className="rounded-xl bg-gradient-primary px-4 py-2 text-center text-sm font-semibold text-teal-foreground">
               Get Started
             </a>
           </div>

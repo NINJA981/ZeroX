@@ -11,9 +11,9 @@ export default async function DashboardLayout({
   const { data } = await supabase.auth.getUser();
   let user = data?.user;
   
-  // MOCK AUTH: If no user is logged in, use a test credential
+  // Middleware handles unauthenticated redirects, but just in case:
   if (!user) {
-    user = { email: "testuser@sahurai.com" } as any;
+    redirect("/login");
   }
 
   return (

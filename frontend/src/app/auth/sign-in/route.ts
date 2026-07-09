@@ -8,18 +8,17 @@ export async function POST(request: Request) {
   const password = String(formData.get('password'))
   const supabase = await createClient()
 
-  // MOCK AUTH: Bypass Supabase
-  // const { error } = await supabase.auth.signInWithPassword({
-  //   email,
-  //   password,
-  // })
+  const { error } = await supabase.auth.signInWithPassword({
+    email,
+    password,
+  })
 
-  // if (error) {
-  //   return NextResponse.redirect(
-  //     `${requestUrl.origin}/login?error=${encodeURIComponent(error.message)}`,
-  //     { status: 301 }
-  //   )
-  // }
+  if (error) {
+    return NextResponse.redirect(
+      `${requestUrl.origin}/login?error=${encodeURIComponent(error.message)}`,
+      { status: 301 }
+    )
+  }
 
   return NextResponse.redirect(`${requestUrl.origin}/dashboard`, {
     status: 301,

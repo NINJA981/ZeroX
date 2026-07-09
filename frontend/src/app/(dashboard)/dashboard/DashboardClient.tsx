@@ -9,6 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const mockReportData: ComplianceReportData = {
   documentName: "Employment_Contract_2024.pdf",
+  complianceScore: 75,
   overallVerdict: "warning",
   summary: "The employment contract generally complies with standard labor laws, but contains a few clauses that require attention. Specifically, the non-compete clause is overly broad and the termination notice period is unusually short, which may not be enforceable depending on jurisdiction.",
   clauses: [

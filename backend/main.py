@@ -17,10 +17,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-from api.routers import documents, analyze
+from api.routers import documents, analyze, simulate
 
 app.include_router(documents.router, prefix="/api/documents", tags=["Documents"])
 app.include_router(analyze.router, prefix="/api/analyze", tags=["Analyze"])
+app.include_router(simulate.router, prefix="/api/simulate", tags=["Simulate"])
 
 @app.get("/health")
 def health_check():

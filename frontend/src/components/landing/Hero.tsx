@@ -43,13 +43,13 @@ export function Hero() {
             className="mt-10 flex flex-col gap-4 sm:flex-row"
           >
             <a
-              href="#demo"
+              href="/login"
               className="inline-flex items-center justify-center gap-2 rounded-2xl bg-primary px-8 py-4 text-[15px] font-semibold text-primary-foreground shadow-elegant transition-transform hover:-translate-y-0.5"
             >
               Analyze My Situation
             </a>
             <a
-              href="#legal-vault"
+              href="/login"
               className="inline-flex items-center justify-center gap-2 rounded-2xl border border-border bg-card px-8 py-4 text-[15px] font-semibold text-foreground shadow-sm transition-colors hover:bg-muted"
             >
               <FolderUp className="h-4 w-4" /> Upload Legal Documents

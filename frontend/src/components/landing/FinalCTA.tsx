@@ -22,7 +22,7 @@ export function FinalCTA() {
           </h2>
           <div className="mt-8 flex justify-center">
             <a
-              href="#demo"
+              href="/login"
               className="inline-flex items-center justify-center rounded-2xl bg-background px-8 py-4 text-[15px] font-semibold text-foreground shadow-soft transition-transform hover:-translate-y-0.5"
             >
               Analyze My Situation
