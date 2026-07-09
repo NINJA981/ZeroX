@@ -12,10 +12,10 @@ export function WhatIfSimulator({ onSimulate, isLoading }: { onSimulate: (scenar
       <CardHeader className="bg-primary/5 pb-4 border-b border-primary/10">
         <CardTitle className="flex items-center gap-2 text-lg text-primary">
           <Beaker className="h-5 w-5" />
-          "What If?" Legal Simulator
+          &quot;What If?&quot; Legal Simulator
         </CardTitle>
         <CardDescription>
-          Modify the facts of the case to see how the legal outcome changes. (e.g. "What if the notice period was 30 days?")
+          Modify the facts of the case to see how the legal outcome changes. (e.g. &quot;What if the notice period was 30 days?&quot;)
         </CardDescription>
       </CardHeader>
       <CardContent className="pt-6 space-y-4">
